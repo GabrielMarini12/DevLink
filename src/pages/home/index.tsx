@@ -1,3 +1,7 @@
+import { Social } from "../../components/Social";
+
+import { FaGithub, FaChrome, FaLinkedin } from "react-icons/fa";
+
 export function Home() {
   return (
     <div className="flex flex-col w-full py-4 items-center justify-center">
@@ -12,6 +16,20 @@ export function Home() {
             <p className="text-base md:text-lg">Canal no Youtube</p>
           </a>
         </section>
+
+        <footer className="flex justify-center gap-3 my-4">
+          <Social url="https://github.com/GabrielMarini12">
+            <FaGithub size={35} color="#fff" />
+          </Social>
+
+          <Social url="https://www.google.com.br/">
+            <FaChrome size={35} color="#fff" />
+          </Social>
+
+          <Social url="https://www.linkedin.com/in/gabrielmarini12/">
+            <FaLinkedin size={35} color="#fff" />
+          </Social>
+        </footer>
       </main>
     </div>
   );
